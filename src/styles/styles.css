@@ -1,0 +1,95 @@
+.header {
+  background-color: #013582;
+  height: 4rem;
+  font-size: 1.2rem;
+}
+.header .nav__item {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald Bold";
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  transition: all 0.2s;
+}
+.header .nav__item:hover {
+  background-color: white;
+  color: #013582;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, -14px 4px 0px rgba(1, 53, 130, 0);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.nav__menu-right, .nav__menu-left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu-left {
+  justify-content: flex-start;
+}
+
+.nav__menu-right {
+  justify-content: flex-end;
+}
+
+.nav__logo {
+  width: 32%;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url("src/assets/banner_1.jpg");
+  background-size: cover;
+}
+
+.banner__heading {
+  font-family: "Oswald";
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.banner__text {
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+}
+
+.banner__btn {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  font-size: 1rem;
+  background-color: #013582;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  transition: all 0.2s;
+}
+.banner__btn:hover {
+  background-color: rgba(1, 53, 130, 0.8);
+}
+
+html {
+  font-size: 18px;
+  font-family: "Cardo";
+}
+
+/*# sourceMappingURL=styles.css.map */

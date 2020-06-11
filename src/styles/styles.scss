@@ -1,0 +1,11 @@
+// Mixins
+@import 'components/_mixins.scss';
+
+// Components
+@import 'components/header.scss';
+@import 'components/firstScreen.scss';
+
+html {
+    font-size: 18px;
+    font-family: 'Cardo';
+}

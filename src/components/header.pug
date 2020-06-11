@@ -1,0 +1,11 @@
+header.header
+    nav.nav
+        .nav__menu-left
+                each item in ['Shop', 'Beloved Gin', 'Spirits']
+                    a(href='#').nav__item= item
+        .nav__logo
+            a(href='#')
+                img(src="src/assets/logo-white.svg", alt="Oakheart Logo", srcset="" width='200')
+        .nav__menu-right
+                each item in ['Origin', 'Distillery', 'Contact']
+                    a(href='#').nav__item= item

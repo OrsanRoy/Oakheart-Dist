@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}@font-face {
+    font-family: 'Cardo';
+    src: url(src/assets/fonts/Cardo-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cardo Bold';
+    src: url(src/assets/fonts/Cardo-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(src/assets/fonts/Oswald-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald Bold';
+    src: url(src/assets/fonts/Oswald-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}.header {
+  background-color: #013582;
+  height: 4rem;
+  font-size: 1.2rem;
+}
+.header .nav__item {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald Bold";
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  transition: all 0.2s;
+}
+.header .nav__item:hover {
+  background-color: white;
+  color: #013582;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, -14px 4px 0px rgba(1, 53, 130, 0);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.nav__menu-right, .nav__menu-left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu-left {
+  justify-content: flex-start;
+}
+
+.nav__menu-right {
+  justify-content: flex-end;
+}
+
+.nav__logo {
+  width: 32%;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url("src/assets/banner_1.jpg");
+  background-size: cover;
+}
+
+.banner__heading {
+  font-family: "Oswald";
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.banner__text {
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+}
+
+.banner__btn {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  font-size: 1rem;
+  background-color: #013582;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  transition: all 0.2s;
+}
+.banner__btn:hover {
+  background-color: rgba(1, 53, 130, 0.8);
+}
+
+html {
+  font-size: 18px;
+  font-family: "Cardo";
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+    </style>
+    <script src="https://kit.fontawesome.com/b47163faa3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__menu-left"><a class="nav__item" href="#">Shop</a><a class="nav__item" href="#">Beloved Gin</a><a class="nav__item" href="#">Spirits</a>
+        </div>
+        <div class="nav__logo"><a href="#"><img src="src/assets/logo-white.svg" alt="Oakheart Logo" srcset="" width="200"/></a></div>
+        <div class="nav__menu-right"><a class="nav__item" href="#">Origin</a><a class="nav__item" href="#">Distillery</a><a class="nav__item" href="#">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <div class="banner">
+      <div class="banner__content">
+        <h1 class="banner__heading">Oakheart Distillery</h1>
+        <p class="banner__text">Worldwide known gins, liqueurs and vermouths, hand-crafted with open heart.</p>
+        <button class="banner__btn">Read More</button>
+      </div>
+    </div>
+    <div class="thumbs">
+      <p class="thumbs__text">Welcome to Oakheart! We are small distillery based in Birmingham, UK. We produce gins, liquors, vodkas, vermouth & whiskies, all made with good vibes and our hears wide open.</p>
+      <div class="thumbs__thumbnails">
+            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
+                <div class="thumbs_wrap">
+                  <h3>Gin</h3>
+                </div></a></div>
+            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
+                <div class="thumbs_wrap">
+                  <h3>Vodka</h3>
+                </div></a></div>
+            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
+                <div class="thumbs_wrap">
+                  <h3>Whisky</h3>
+                </div></a></div>
+            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
+                <div class="thumbs_wrap">
+                  <h3>Vermouth</h3>
+                </div></a></div>
+            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
+                <div class="thumbs_wrap">
+                  <h3>Liquor</h3>
+                </div></a></div>
+            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
+                <div class="thumbs_wrap">
+                  <h3>Merchandise</h3>
+                </div></a></div>
+      </div>
+    </div>
+    <div class="gin">
+      <div class="gin__content">
+        <h2 class="gin__heading">Our beloved Gin</h2>
+        <p class="gin__text">Gin is commonly used in cocktails and mixed drinks, such as the gin and tonic, martini, Negroni, gimlet, Tom Collins, French 75, Aviation, Singapore Sling, 20th Century, Gibson, Last Word, Vesper, gin fizz, Old Etonian and Moon River.</p>
+      </div>
+      <div class="gin__product-list">
+            <div class="__card">
+              <figure class="__img"><img src="src/assets/gin_1.png" alt="" srcset="" width="200"/></figure>
+              <p class="__title">Some Old School</p>
+              <p class="__price">45£</p>
+              <button class="__buy-button">Buy Now</button>
+            </div>
+            <div class="__card">
+              <figure class="__img"><img src="src/assets/gin_2.png" alt="" srcset="" width="200"/></figure>
+              <p class="__title">Some Old School</p>
+              <p class="__price">45£</p>
+              <button class="__buy-button">Buy Now</button>
+            </div>
+            <div class="__card">
+              <figure class="__img"><img src="src/assets/gin_3.png" alt="" srcset="" width="200"/></figure>
+              <p class="__title">Some Old School</p>
+              <p class="__price">45£</p>
+              <button class="__buy-button">Buy Now</button>
+            </div>
+      </div>
+    </div>
+    <div class="spirits">
+      <div class="spirits__content">
+        <h2 class="spirits__heading">Explore Our Spirits</h2>
+        <p class="spirits__text">Spirits are the highest ABV products of the yeast-based fermentation of a liquid brewed to have fermentable sugars. Unlike beer or wine, however, spirits are the product of a second step called “distillation” that further fortifies them.</p>
+      </div>
+      <div class="spirits__product-list">
+            <div class="__card">
+              <figure class="__img"><img src="src/assets/liquor_1.png" alt="" srcset="" width="200"/></figure>
+              <p class="__title">Funky Liquor</p>
+              <p class="__price">39£</p>
+              <button class="__buy-button">Buy Now</button>
+            </div>
+            <div class="__card">
+              <figure class="__img"><img src="src/assets/liquor_2.jpg" alt="" srcset="" width="200"/></figure>
+              <p class="__title">Abbie the Tiger</p>
+              <p class="__price">56£</p>
+              <button class="__buy-button">Buy Now</button>
+            </div>
+            <div class="__card">
+              <figure class="__img"><img src="src/assets/liquor_3.png" alt="" srcset="" width="200"/></figure>
+              <p class="__title">Long Jason</p>
+              <p class="__price">49£</p>
+              <button class="__buy-button">Buy Now</button>
+            </div>
+      </div>
+    </div>
+    <div class="origin">
+      <div class="origin__content">
+        <h2 class="origin__heading">Born in Oaks</h2>
+        <p class="origin__text">Our distillery was founded in 2006 by Vincent Bowers — a humble man with little dream about running his own business. He had nothing but some money and strong desire to make good beverages.</p>
+        <p class="origin__text">Vincent was not afraid of using technologies; that gave us a chance to grow larger and become one of the most famous distilleries in our area. You want to know what is our secret? Patience and love. </p>
+      </div>
+    </div>
+    <div class="distillery">
+      <div class="distillery__content">
+        <h2 class="distillery__heading">Distillery</h2>
+        <p class="distillery__text">We get emails on a daily basis with people asking us for more information and advice on how and where to begin. Let us just say this, it’s a long answer.</p>
+        <p class="distillery__text">Want to know more? Read our full article:</p>
+        <button class="distillery__button">Read article</button>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="contact__info">
+        <h3 class="contact__contact-heading"></h3>
+        <p class="contact__address">28 Grange Rd, Birmingham B6 6LA, UK</p>
+        <p><a class="contact__phone" href="#">+44 123 456 7890</a></p>
+        <p><a class="contact__email" href="#">oakheart@somemail.com</a></p>
+      </div>
+      <div class="contact__social">
+        <h3 class="contact__social-heading"></h3>
+        <div class="contact__social-container"><a href="#"><img src="src/assets/facebook.svg" alt="Facebook" srcset="" width="40"/></a><a href="#"><img src="src/assets/instagram.svg" alt="Instagram" srcset="" width="40"/></a><a href="#"><img src="src/assets/twitter.svg" alt="Twitter" srcset="" width="40"/></a></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Oakheart Distillery</p>
+      <div class="footer__policy">
+        <p> </p><a class="footer__terms" href="#">Terms & Conditions</a>
+        <p class="footer__author">Website by <a href='#'>Orsan Roy</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
