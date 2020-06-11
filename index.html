@@ -85,9 +85,6 @@ table {
 }
 .header .nav__item {
   color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Oswald Bold";
   height: 100%;
   display: flex;
   align-items: center;
@@ -157,7 +154,107 @@ table {
   padding-bottom: 2.5rem;
 }
 
-.banner__btn {
+.thumbs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.thumbs__content {
+  width: 35%;
+  margin-bottom: 3rem;
+}
+
+.thumbs__text {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.thumbs__thumbnails {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbs__card {
+  width: 500px;
+  height: 500px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.thumbs__card:hover .thumbs__title {
+  background-color: #013582;
+  color: white;
+}
+
+.thumbs__title {
+  font-family: "Oswald";
+  color: #013582;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 1.4rem;
+  width: 70%;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s;
+}
+
+.thumbs__merchandise, .thumbs__liquor, .thumbs__vermouth, .thumbs__whisky, .thumbs__vodka {
+  background-position: center;
+}
+
+.thumbs__gin {
+  background-image: url("src/assets/thumb_gin.jpg");
+  background-size: cover;
+}
+
+.thumbs__vodka {
+  background-image: url("src/assets/thumb_vodka.jpg");
+  background-size: cover;
+}
+
+.thumbs__whisky {
+  background-image: url("src/assets/thumb_whisky.jpg");
+  background-size: cover;
+}
+
+.thumbs__vermouth {
+  background-image: url("src/assets/thumb_vermouth.jpg");
+  background-size: cover;
+}
+
+.thumbs__liquor {
+  background-image: url("src/assets/thumb_liquor.jpg");
+  background-size: cover;
+}
+
+.thumbs__merchandise {
+  background-image: url("src/assets/thumb_merch.jpeg");
+  background-size: cover;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Cardo";
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald Bold";
+}
+
+button {
   font-family: "Oswald";
   text-transform: uppercase;
   letter-spacing: 0.075rem;
@@ -169,13 +266,8 @@ table {
   padding: 0.3rem 1rem;
   transition: all 0.2s;
 }
-.banner__btn:hover {
+button:hover {
   background-color: rgba(1, 53, 130, 0.8);
-}
-
-html {
-  font-size: 18px;
-  font-family: "Cardo";
 }
 
 /*# sourceMappingURL=styles.css.map */
@@ -202,33 +294,22 @@ html {
       </div>
     </div>
     <div class="thumbs">
-      <p class="thumbs__text">Welcome to Oakheart! We are small distillery based in Birmingham, UK. We produce gins, liquors, vodkas, vermouth & whiskies, all made with good vibes and our hears wide open.</p>
-      <div class="thumbs__thumbnails">
-            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
-                <div class="thumbs_wrap">
-                  <h3>Gin</h3>
-                </div></a></div>
-            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
-                <div class="thumbs_wrap">
-                  <h3>Vodka</h3>
-                </div></a></div>
-            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
-                <div class="thumbs_wrap">
-                  <h3>Whisky</h3>
-                </div></a></div>
-            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
-                <div class="thumbs_wrap">
-                  <h3>Vermouth</h3>
-                </div></a></div>
-            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
-                <div class="thumbs_wrap">
-                  <h3>Liquor</h3>
-                </div></a></div>
-            <div class="thumbs__card"><a class="thumbs__anchor" href="#">
-                <div class="thumbs_wrap">
-                  <h3>Merchandise</h3>
-                </div></a></div>
+      <div class="thumbs__content">
+        <p class="thumbs__text">Welcome to Oakheart! </p>
+        <p class="thumbs__text">We are small distillery based in Birmingham, UK. We produce gins, liquors, vodkas, vermouth & whiskies, all made with good vibes and our hearts wide open.</p>
       </div>
+      <div class="thumbs__thumbnails"><a class="thumbs__card thumbs__gin" href="#">
+              <h3 class="thumbs__title">gin</h3></a><a class="thumbs__card thumbs__liquor" href="#">
+              <h3 class="thumbs__title">liquor</h3></a><a class="thumbs__card thumbs__vermouth" href="#">
+              <h3 class="thumbs__title">vermouth</h3></a><a class="thumbs__card thumbs__vodka" href="#">
+              <h3 class="thumbs__title">vodka</h3></a><a class="thumbs__card thumbs__whisky" href="#">
+              <h3 class="thumbs__title">whisky</h3></a><a class="thumbs__card thumbs__merchandise" href="#">
+              <h3 class="thumbs__title">merchandise</h3></a>
+      </div>
+    </div>
+    <div class="promo">
+      <h2 class="promo__heading"> </h2>
+      <p class="promo__text">Bermuda Triangle Gin — </p>
     </div>
     <div class="gin">
       <div class="gin__content">

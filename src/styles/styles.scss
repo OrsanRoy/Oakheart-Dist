@@ -4,8 +4,32 @@
 // Components
 @import 'components/header.scss';
 @import 'components/firstScreen.scss';
+@import 'components/shop.scss';
 
 html {
     font-size: 18px;
     font-family: 'Cardo';
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald Bold';
+}
+
+button {
+        font-family: 'Oswald';
+        text-transform: uppercase;
+        letter-spacing: 0.075rem;
+        font-size: 1rem;
+        background-color: $main-color;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.3rem 1rem;
+        transition: all 0.2s;
+    
+        &:hover {
+            background-color: $main-color-light;
+        }
 }

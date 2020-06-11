@@ -1,5 +1,5 @@
 mixin thumb (title)
-    .thumbs__card
-        a.thumbs__anchor(href="#")
-            .thumbs_wrap
-                h3= title
+    a(class=`thumbs__card thumbs__${title}` href='#')
+            h3.thumbs__title= title
+            //- .thumbs_wrap
+                

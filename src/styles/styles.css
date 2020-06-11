@@ -5,9 +5,6 @@
 }
 .header .nav__item {
   color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Oswald Bold";
   height: 100%;
   display: flex;
   align-items: center;
@@ -77,7 +74,107 @@
   padding-bottom: 2.5rem;
 }
 
-.banner__btn {
+.thumbs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.thumbs__content {
+  width: 35%;
+  margin-bottom: 3rem;
+}
+
+.thumbs__text {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.thumbs__thumbnails {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbs__card {
+  width: 500px;
+  height: 500px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.thumbs__card:hover .thumbs__title {
+  background-color: #013582;
+  color: white;
+}
+
+.thumbs__title {
+  font-family: "Oswald";
+  color: #013582;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 1.4rem;
+  width: 70%;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s;
+}
+
+.thumbs__merchandise, .thumbs__liquor, .thumbs__vermouth, .thumbs__whisky, .thumbs__vodka {
+  background-position: center;
+}
+
+.thumbs__gin {
+  background-image: url("src/assets/thumb_gin.jpg");
+  background-size: cover;
+}
+
+.thumbs__vodka {
+  background-image: url("src/assets/thumb_vodka.jpg");
+  background-size: cover;
+}
+
+.thumbs__whisky {
+  background-image: url("src/assets/thumb_whisky.jpg");
+  background-size: cover;
+}
+
+.thumbs__vermouth {
+  background-image: url("src/assets/thumb_vermouth.jpg");
+  background-size: cover;
+}
+
+.thumbs__liquor {
+  background-image: url("src/assets/thumb_liquor.jpg");
+  background-size: cover;
+}
+
+.thumbs__merchandise {
+  background-image: url("src/assets/thumb_merch.jpeg");
+  background-size: cover;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Cardo";
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald Bold";
+}
+
+button {
   font-family: "Oswald";
   text-transform: uppercase;
   letter-spacing: 0.075rem;
@@ -89,13 +186,8 @@
   padding: 0.3rem 1rem;
   transition: all 0.2s;
 }
-.banner__btn:hover {
+button:hover {
   background-color: rgba(1, 53, 130, 0.8);
-}
-
-html {
-  font-size: 18px;
-  font-family: "Cardo";
 }
 
 /*# sourceMappingURL=styles.css.map */
