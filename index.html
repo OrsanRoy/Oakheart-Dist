@@ -130,14 +130,19 @@ table {
 
 .banner {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  background-image: url("src/assets/banner_1.jpg");
+  background-image: url("src/assets/banner_2.jpg"), linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  background-blend-mode: overlay;
+  background-position-y: 90%;
   background-size: cover;
+}
+
+.banner__img {
+  padding-bottom: 2rem;
 }
 
 .banner__heading {
@@ -147,8 +152,9 @@ table {
 }
 
 .banner__text {
-  padding-top: 2rem;
-  padding-bottom: 1.2rem;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 .banner__btn {
@@ -189,6 +195,7 @@ html {
     </header>
     <div class="banner">
       <div class="banner__content">
+        <figure class="banner__img"><img src="src/assets/logo-isolated-black.svg" alt="Oakheart Logo" width="70"/></figure>
         <h1 class="banner__heading">Oakheart Distillery</h1>
         <p class="banner__text">Worldwide known gins, liqueurs and vermouths, hand-crafted with open heart.</p>
         <button class="banner__btn">Read More</button>
