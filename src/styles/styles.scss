@@ -5,6 +5,7 @@
 @import 'components/header.scss';
 @import 'components/firstScreen.scss';
 @import 'components/shop.scss';
+@import 'components/promo.scss';
 
 html {
     font-size: 18px;
@@ -32,4 +33,10 @@ button {
         &:hover {
             background-color: $main-color-light;
         }
+}
+
+h2 {
+    font-family: 'Oswald';
+    font-size: 2rem;
+    text-transform: uppercase;
 }
