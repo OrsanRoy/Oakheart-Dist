@@ -6,6 +6,7 @@
 @import 'components/firstScreen.scss';
 @import 'components/shop.scss';
 @import 'components/promo.scss';
+@import 'components/gin_spirits.scss';
 
 html {
     font-size: 18px;
@@ -16,6 +17,11 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Oswald Bold';
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 button {

@@ -78,14 +78,19 @@ table {
     src: url(src/assets/fonts/Oswald-Bold.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
-}.header {
+}.gin__text,
+.spirits__text, .promo__text {
+  padding: 1.5rem 0;
+}
+
+.header {
   background-color: #013582;
   height: 4rem;
   font-size: 1.2rem;
 }
 .header .nav__item {
-  color: white;
   height: 100%;
+  color: white;
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -127,7 +132,7 @@ table {
 
 .banner {
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,18 +165,17 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 4rem 0;
   text-align: center;
 }
 
 .thumbs__content {
   width: 35%;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
-.thumbs__text {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+.thumbs__text:first-child {
+  padding-bottom: 1.5rem;
 }
 
 .thumbs__thumbnails {
@@ -246,7 +250,7 @@ table {
 .promo {
   width: 100%;
   height: 80vh;
-  background-image: url("src/assets/palm-bg_2.png");
+  background-image: url("src/assets/palm-bg.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -271,9 +275,59 @@ table {
   top: 5%;
 }
 
-.promo__text {
-  font-size: 1.2rem;
-  padding: 1.5rem 0;
+.gin,
+.spirits {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4rem 0;
+}
+
+.gin__content,
+.spirits__content {
+  width: 60%;
+}
+
+.gin__product-list,
+.spirits__product-list {
+  margin-top: 2rem;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.gin__product-list .__card,
+.spirits__product-list .__card {
+  position: relative;
+}
+.gin__product-list .__card .__title,
+.spirits__product-list .__card .__title {
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+.gin__product-list .__card .__buy-btn,
+.spirits__product-list .__card .__buy-btn {
+  margin-top: 1.5rem;
+}
+
+.__img-container {
+  position: relative;
+  transition: all 0.2s;
+}
+.__img-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  opacity: 0;
+}
+.__img-container:hover:before {
+  opacity: 1;
 }
 
 html {
@@ -285,6 +339,11 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Oswald Bold";
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 button {
@@ -352,7 +411,7 @@ h2 {
         <p class="promo__text">Meet Bermuda Triangle Gin — a tough Old School guy who have been through some troubles.</p>
         <button class="promo__btn">Try this Gin</button>
       </div>
-      <figure class="promo__bottles-img"><img src="src/assets/bottles-contr.png" alt="Bermuda Triangle Gin" width="400"/></figure>
+      <figure class="promo__bottles-img"><img src="src/assets/bottles-black.png" alt="Bermuda Triangle Gin" width="360"/></figure>
     </div>
     <div class="gin">
       <div class="gin__content">
@@ -361,22 +420,28 @@ h2 {
       </div>
       <div class="gin__product-list">
             <div class="__card">
-              <figure class="__img"><img src="src/assets/gin_1.png" alt="" srcset="" width="200"/></figure>
-              <p class="__title">Some Old School</p>
-              <p class="__price">45£</p>
-              <button class="__buy-button">Buy Now</button>
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/gin_1.png" alt="Jade Twilight gin" height="350"/></a></div>
+              <p class="__title">Jade Twilight</p>
+              <p class="__price">45.99£</p>
+              <button class="__buy-btn">Buy Now</button>
             </div>
             <div class="__card">
-              <figure class="__img"><img src="src/assets/gin_2.png" alt="" srcset="" width="200"/></figure>
-              <p class="__title">Some Old School</p>
-              <p class="__price">45£</p>
-              <button class="__buy-button">Buy Now</button>
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/gin_2.png" alt="Dancing Elephant gin" height="350"/></a></div>
+              <p class="__title">Dancing Elephant</p>
+              <p class="__price">42.95£</p>
+              <button class="__buy-btn">Buy Now</button>
             </div>
             <div class="__card">
-              <figure class="__img"><img src="src/assets/gin_3.png" alt="" srcset="" width="200"/></figure>
-              <p class="__title">Some Old School</p>
-              <p class="__price">45£</p>
-              <button class="__buy-button">Buy Now</button>
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/gin_3.png" alt="Dark King Rose gin" height="350"/></a></div>
+              <p class="__title">Dark King Rose</p>
+              <p class="__price">39.55£</p>
+              <button class="__buy-btn">Buy Now</button>
+            </div>
+            <div class="__card">
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/gin_4.png" alt="Dreamy Sunset gin" height="350"/></a></div>
+              <p class="__title">Dreamy Sunset</p>
+              <p class="__price">47.85£</p>
+              <button class="__buy-btn">Buy Now</button>
             </div>
       </div>
     </div>
@@ -387,22 +452,28 @@ h2 {
       </div>
       <div class="spirits__product-list">
             <div class="__card">
-              <figure class="__img"><img src="src/assets/liquor_1.png" alt="" srcset="" width="200"/></figure>
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/liquor_1.png" alt="Funky Liquor gin" height="350"/></a></div>
               <p class="__title">Funky Liquor</p>
-              <p class="__price">39£</p>
-              <button class="__buy-button">Buy Now</button>
+              <p class="__price">39.85£</p>
+              <button class="__buy-btn">Buy Now</button>
             </div>
             <div class="__card">
-              <figure class="__img"><img src="src/assets/liquor_2.jpg" alt="" srcset="" width="200"/></figure>
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/liquor_2.png" alt="Abbie the Tiger gin" height="350"/></a></div>
               <p class="__title">Abbie the Tiger</p>
-              <p class="__price">56£</p>
-              <button class="__buy-button">Buy Now</button>
+              <p class="__price">56.55£</p>
+              <button class="__buy-btn">Buy Now</button>
             </div>
             <div class="__card">
-              <figure class="__img"><img src="src/assets/liquor_3.png" alt="" srcset="" width="200"/></figure>
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/liquor_3.png" alt="Long Jason gin" height="350"/></a></div>
               <p class="__title">Long Jason</p>
-              <p class="__price">49£</p>
-              <button class="__buy-button">Buy Now</button>
+              <p class="__price">49.95£</p>
+              <button class="__buy-btn">Buy Now</button>
+            </div>
+            <div class="__card">
+              <div class="__img-container" href="#"><a href="#"><img class="__img" src="src/assets/liquor_4.png" alt="Cold Berry gin" height="350"/></a></div>
+              <p class="__title">Cold Berry</p>
+              <p class="__price">55.35£</p>
+              <button class="__buy-btn">Buy Now</button>
             </div>
       </div>
     </div>

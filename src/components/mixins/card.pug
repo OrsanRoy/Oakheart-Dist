@@ -1,7 +1,8 @@
 mixin card(title, img, price)
     .__card
-        figure.__img
-            img(src= img, alt="", srcset="" width="200")
+        .__img-container(href='#')
+            a(href='#')
+                img.__img(src= img, alt= title + ` gin`, height="350")
         p.__title= title
         p.__price= price
-        button.__buy-button Buy Now
+        button.__buy-btn Buy Now

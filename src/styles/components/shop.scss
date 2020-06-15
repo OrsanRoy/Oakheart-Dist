@@ -4,19 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    padding: 4rem 0;
     text-align: center;
     
 }
 
 .thumbs__content {
     width: 35%;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .thumbs__text {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    &:first-child {
+        padding-bottom: 1.5rem;
+    }
 }
 
 .thumbs__thumbnails {
