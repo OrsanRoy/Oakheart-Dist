@@ -1,6 +1,10 @@
+include mixins/mk_card.pug
+
 .distillery
     .distillery__content
         h2.distillery__heading Distillery
         p.distillery__text We get emails on a daily basis with people asking us for more information and advice on how and where to begin. Let us just say this, it’s a long answer.
-        p.distillery__text Want to know more? Read our full article:
-        button.distillery__button Read article
+    .distillery__mk-cards
+        +mk-card('src/assets/dist_mk.png', 'Visit our distillery', 'Have you ever dreamed about visiting little and cozy distillery? Finding out how everything works? Book a visit!')
+        +mk-card('src/assets/liq_mk.png', 'Make your own liquor with us!', 'We guess everyone loves spirits. Do you want to make one yourself? This is not impossible!')
+        +mk-card('src/assets/cocktail_mk.jpg', 'Cocktail Masterclass in Oakheart', 'We in Oakheart not only just make alco beverages, we also know how to be a good bartender. You can learn with us!')

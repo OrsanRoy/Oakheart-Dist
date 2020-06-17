@@ -1,0 +1,46 @@
+.distillery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4rem 6rem;
+}
+
+.distillery__content {
+    width: 35%;
+}
+
+.distillery__text {
+    @extend %text-pad;
+}
+
+.distillery__mk-cards {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
+    .__mk-card {
+        width: 30%;
+
+        .__mk-img {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .__mk-title {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .__mk-text {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+    }
+}
+

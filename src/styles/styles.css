@@ -1,4 +1,4 @@
-.gin__text,
+.distillery__text, .gin__text,
 .spirits__text, .promo__text {
   padding: 1.5rem 0;
 }
@@ -250,6 +250,10 @@
   opacity: 1;
 }
 
+.spirits {
+  background-color: #fafafa;
+}
+
 .origin {
   width: 100%;
   height: 70vh;
@@ -270,6 +274,43 @@
 .origin__text_first {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+}
+
+.distillery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4rem 6rem;
+}
+
+.distillery__content {
+  width: 35%;
+}
+
+.distillery__mk-cards {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.distillery__mk-cards .__mk-card {
+  width: 30%;
+}
+.distillery__mk-cards .__mk-card .__mk-img {
+  width: 100%;
+}
+.distillery__mk-cards .__mk-card .__mk-img img {
+  width: 100%;
+  height: auto;
+}
+.distillery__mk-cards .__mk-card .__mk-title {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.distillery__mk-cards .__mk-card .__mk-text {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 html {

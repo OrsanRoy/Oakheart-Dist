@@ -1,6 +1,7 @@
 // Mixins
 @import 'components/_mixins.scss';
 
+
 // Components
 @import 'components/header.scss';
 @import 'components/firstScreen.scss';
@@ -8,6 +9,7 @@
 @import 'components/promo.scss';
 @import 'components/gin_spirits.scss';
 @import 'components/origin.scss';
+@import 'components/distillery.scss';
 
 html {
     font-size: 18px;
