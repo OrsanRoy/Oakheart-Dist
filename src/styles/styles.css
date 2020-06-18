@@ -107,8 +107,12 @@
   margin-bottom: 4rem;
 }
 
-.thumbs__text:first-child {
+.thumbs__heading {
   padding-bottom: 1.5rem;
+}
+
+.thumbs__text {
+  line-height: 1.8rem;
 }
 
 .thumbs__thumbnails {
@@ -215,6 +219,10 @@
   align-items: center;
   box-sizing: border-box;
   padding: 4rem 0;
+}
+.gin img,
+.spirits img {
+  max-width: 300px;
 }
 
 .gin__content,
@@ -340,7 +348,7 @@
   margin-bottom: 1.5rem;
 }
 
-.contact__info .contact__email {
+.contact__info .contact__text_padding-bottom {
   padding: 0.3rem 0;
 }
 
