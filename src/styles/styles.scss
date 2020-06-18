@@ -10,6 +10,7 @@
 @import 'components/gin_spirits.scss';
 @import 'components/origin.scss';
 @import 'components/distillery.scss';
+@import 'components/contact.scss';
 
 html {
     font-size: 18px;
@@ -19,7 +20,6 @@ html {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Oswald Bold';
 }
 
 p {
@@ -48,4 +48,5 @@ h2 {
     font-family: 'Oswald';
     font-size: 2rem;
     text-transform: uppercase;
+    color: $main-color;
 }

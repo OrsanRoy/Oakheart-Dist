@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding: 4rem 6rem;
+    padding: 4rem 0;
 }
 
 .distillery__content {
@@ -16,6 +16,7 @@
 }
 
 .distillery__mk-cards {
+    width: 85%;
     padding-top: 1.5rem;
     display: flex;
     justify-content: space-around;

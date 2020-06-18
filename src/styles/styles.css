@@ -3,6 +3,18 @@
   padding: 1.5rem 0;
 }
 
+.contact__info a {
+  color: #013582;
+  font-family: "Oswald";
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  display: block;
+  text-transform: none;
+}
+.contact__info a:hover {
+  color: rgba(1, 53, 130, 0.8);
+}
+
 .header {
   background-color: #013582;
   height: 4rem;
@@ -15,6 +27,7 @@
   align-items: center;
   padding: 0 1rem;
   transition: all 0.2s;
+  font-family: "Oswald Bold";
 }
 .header .nav__item:hover {
   background-color: white;
@@ -197,7 +210,6 @@
 
 .gin,
 .spirits {
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,7 +294,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  padding: 4rem 6rem;
+  padding: 4rem 0;
 }
 
 .distillery__content {
@@ -290,6 +302,7 @@
 }
 
 .distillery__mk-cards {
+  width: 85%;
   padding-top: 1.5rem;
   display: flex;
   justify-content: space-around;
@@ -313,6 +326,30 @@
   font-size: 1rem;
 }
 
+.contact {
+  background-color: lightgray;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+.contact h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact__info .contact__email {
+  padding: 0.3rem 0;
+}
+
+.contact__social-container a {
+  margin-right: 0.5rem;
+}
+.contact__social-container a:last-child {
+  margin-right: 0;
+}
+.contact__social-container img {
+  width: 35px;
+}
+
 html {
   font-size: 18px;
   font-family: "Cardo";
@@ -321,7 +358,6 @@ html {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Oswald Bold";
 }
 
 p {
@@ -349,6 +385,7 @@ h2 {
   font-family: "Oswald";
   font-size: 2rem;
   text-transform: uppercase;
+  color: #013582;
 }
 
 /*# sourceMappingURL=styles.css.map */

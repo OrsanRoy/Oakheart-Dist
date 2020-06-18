@@ -1,0 +1,33 @@
+.contact { 
+    background-color: lightgray;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.contact__info {
+    a {
+        @extend %anchors;
+    }
+
+    .contact__email {
+        padding: 0.3rem 0;
+    }
+}
+
+.contact__social-container {
+    a {
+        margin-right: 0.5rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    img {
+        width: 35px;
+    }
+}

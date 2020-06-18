@@ -1,18 +1,21 @@
 .contact
     .contact__info
-        h3.contact__contact-heading
+        h2.contact__contact-heading Our contacts
         p.contact__address 28 Grange Rd, Birmingham B6 6LA, UK
-        p
-            a(href='#').contact__phone +44 123 456 7890
-        p
-            a(href='#').contact__email oakheart@somemail.com
+        a(href='#').contact__email oakheart@somemail.com
+        a(href='#').contact__phone +44 123 456 7890
     .contact__social
-        h3.contact__social-heading
+        h2.contact__social-heading We in Social Media
         .contact__social-container
             a(href='#')
-                img(src="src/assets/facebook.svg", alt="Facebook", srcset="" width='40')
+                img(src="src/assets/socialIcons/facebook.svg" alt="Facebook" 
+                onmouseover='this.src="src/assets/socialIcons/facebook-light.svg";' 
+                onmouseout='this.src="src/assets/socialIcons/facebook.svg";')
             a(href='#')
-                img(src="src/assets/instagram.svg", alt="Instagram", srcset="" width='40')
+                img(src="src/assets/socialIcons/instagram.svg" alt="Instagram"
+                onmouseover='this.src="src/assets/socialIcons/instagram-light.svg";' 
+                onmouseout='this.src="src/assets/socialIcons/instagram.svg";')
             a(href='#')
-                img(src="src/assets/twitter.svg", alt="Twitter", srcset="" width='40')
-            
+                img(src="src/assets/socialIcons/twitter.svg" alt="Twitter"
+                onmouseover='this.src="src/assets/socialIcons/twitter-light.svg";' 
+                onmouseout='this.src="src/assets/socialIcons/twitter.svg";')
