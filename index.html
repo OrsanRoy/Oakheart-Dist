@@ -5,7 +5,8 @@
     <meta name="theme-color" content="#013582"/>
     <meta name="msapplication-navbutton-color" content="#013582"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="#013582"/>
-    <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="src/assets/favicon.png" type="image/png"/>
+    <link rel="icon" href="src/assets/favicon.png" type="image/png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Oakheart Distillery</title>
     <style>
@@ -271,7 +272,7 @@ table {
 .promo {
   width: 100%;
   height: 80vh;
-  background-image: url("src/assets/palm-bg.png");
+  background-image: url("src/assets/promo_bg1.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -284,16 +285,18 @@ table {
   box-sizing: border-box;
   padding: 3rem;
   width: 35%;
-  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.promo__bottles-img {
+.promo__bottle-img {
   width: 35%;
   align-self: flex-start;
   display: flex;
   justify-content: center;
   position: relative;
   top: 5%;
+}
+.promo__bottle-img img {
+  width: 500px;
 }
 
 .gin,
@@ -568,7 +571,7 @@ h3 {
         <p class="promo__text">Meet Bermuda Triangle Gin — a tough Old School guy who have been through some troubles.</p>
         <button class="promo__btn">Try this Gin</button>
       </div>
-      <figure class="promo__bottles-img"><img src="src/assets/bottles-black.png" alt="Bermuda Triangle Gin" width="360"/></figure>
+      <figure class="promo__bottle-img"><img src="src/assets/promo_shadow.png" alt="Bermuda Triangle Gin"/></figure>
     </div>
     <div class="gin">
       <div class="gin__content">
