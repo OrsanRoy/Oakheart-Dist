@@ -431,6 +431,30 @@ table {
   width: 35px;
 }
 
+.footer {
+  background-color: #013582;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.footer a {
+  color: white;
+  font-family: "Oswald";
+}
+.footer a:hover {
+  color: lightgray;
+}
+
+.footer__policy {
+  display: flex;
+}
+
+.footer__author {
+  margin-left: 2rem;
+}
+
 html {
   font-size: 18px;
   font-family: "Cardo";
@@ -632,7 +656,7 @@ h3 {
     <footer class="footer">
       <p class="footer__copyright">© 2020 Oakheart Distillery</p>
       <div class="footer__policy">
-        <p> </p><a class="footer__terms" href="#">Terms & Conditions</a>
+        <p> <a href="#">Terms & Conditions</a></p>
         <p class="footer__author">Website by <a href='#'>Orsan Roy</a></p>
       </div>
     </footer>

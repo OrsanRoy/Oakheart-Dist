@@ -350,6 +350,30 @@
   width: 35px;
 }
 
+.footer {
+  background-color: #013582;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.footer a {
+  color: white;
+  font-family: "Oswald";
+}
+.footer a:hover {
+  color: lightgray;
+}
+
+.footer__policy {
+  display: flex;
+}
+
+.footer__author {
+  margin-left: 2rem;
+}
+
 html {
   font-size: 18px;
   font-family: "Cardo";

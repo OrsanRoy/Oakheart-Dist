@@ -1,0 +1,25 @@
+.footer {
+    background-color: $main-color;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+
+    a {
+        color: white;
+        font-family: 'Oswald';
+
+        &:hover {
+            color: lightgray;
+        }
+    }
+}
+
+.footer__policy {
+    display: flex;
+}
+
+.footer__author {
+    margin-left: 2rem;
+}
