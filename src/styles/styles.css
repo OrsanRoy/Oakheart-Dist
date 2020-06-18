@@ -388,4 +388,12 @@ h2 {
   color: #013582;
 }
 
+h3 {
+  font-family: "Oswald";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #013582;
+}
+
 /*# sourceMappingURL=styles.css.map */
