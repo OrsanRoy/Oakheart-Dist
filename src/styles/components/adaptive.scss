@@ -47,6 +47,25 @@
         max-width: 400px;
     }
 
+    .promo {
+        height: auto;
+        flex-direction: column;
+        padding: 4rem 0;
+        background-image: url('../assets/promo_bg_tab.png');
+
+        .promo__content {
+            padding: 0;
+            margin: auto;
+            width: 60%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .promo__bottle-img {
+            margin: auto;
+        }
+    }
+
     .gin__product-list,
     .spirits__product-list {
         flex-wrap: wrap;
@@ -124,23 +143,9 @@
         width: 180px;
     }
 
-    .promo {
+    .origin {
         height: auto;
-        flex-direction: column;
         padding: 4rem 0;
-        background-image: url('../assets/promo_bg_tab.png');
-
-        .promo__content {
-            padding: 0;
-            margin: auto;
-            width: 60%;
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .promo__bottle-img {
-            margin: auto;
-        }
     }
 
     .thumbs__card {
@@ -161,6 +166,12 @@
 
     .thumbs__content, .distillery__content, .origin__content, .gin__content, .spirits__content {
         width: 85%;
+    }
+
+    .promo {
+        .promo__content {
+            width: 85%;
+        }
     }
 
     .thumbs__card {
@@ -217,16 +228,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .promo {
-        .promo__content {
-            width: 85%;
-        }
-    }
-
-    .origin {
-        height: 80vh;
     }
 
     .contact {
