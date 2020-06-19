@@ -32,7 +32,6 @@
 .thumbs__card {
     width: 500px;
     height: 500px;
-    background-color: lightgreen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,36 +63,36 @@
 }
 
 .thumbs__gin {
-    background-image: url('src/assets/thumb_gin.jpg');
+    background-image: url('../assets/thumb_gin.jpg');
     background-size: cover;
 }
 
 .thumbs__vodka {
-    background-image: url('src/assets/thumb_vodka.jpg');
+    background-image: url('../assets/thumb_vodka.jpg');
     background-size: cover;
     @extend %bg-position;
 }
 
 .thumbs__whisky {
-    background-image: url('src/assets/thumb_whisky.jpg');
+    background-image: url('../assets/thumb_whisky.jpg');
     background-size: cover;
     @extend %bg-position;
 }
 
 .thumbs__vermouth {
-    background-image: url('src/assets/thumb_vermouth.jpg');
+    background-image: url('../assets/thumb_vermouth.jpg');
     background-size: cover;
     @extend %bg-position;
 }
 
 .thumbs__liquor {
-    background-image: url('src/assets/thumb_liquor.jpg');
+    background-image: url('../assets/thumb_liquor.jpg');
     background-size: cover;
     @extend %bg-position;
 }
 
 .thumbs__merchandise {
-    background-image: url('src/assets/thumb_merch.jpeg');
+    background-image: url('../assets/thumb_merch.jpeg');
     background-size: cover;
     @extend %bg-position;
 }

@@ -5,6 +5,10 @@
     align-items: center;
     box-sizing: border-box;
     padding: 4rem 0;
+
+    img {
+        max-width: 300px;
+    }
 }
 
 .gin__content,
@@ -15,18 +19,6 @@
 .gin__text,
 .spirits__text {
     @extend %text-pad;
-}
-
-.gin {
-    img {
-        max-width: 200px;
-    }
-}
-
-.spirits {
-    img {
-        max-width: 300px;
-    }
 }
 
 .gin__product-list,
