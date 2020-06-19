@@ -642,10 +642,6 @@ svg {
   }
 }
 @media screen and (max-width: 740px) {
-  .promo .promo__content {
-    width: 85%;
-  }
-
   .header {
     height: 6rem;
     font-size: 1.5rem;
@@ -669,6 +665,14 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .promo .promo__content {
+    width: 85%;
+  }
+
+  .origin {
+    height: 80vh;
   }
 
   .contact {
